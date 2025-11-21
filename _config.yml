@@ -8,7 +8,7 @@ language: zh-CN
 timezone: null
 
 # URL
-url: https://slfftz2011.github.io/blog
+url: https://slfftz2011.github.io/blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -88,7 +88,7 @@ theme: butterfly
 deploy:
   type: git
   repository: https://github.com/slfftz2011/blog.git
-  branch: site
+  branch: main
 
 lazyload:
   enable: true
