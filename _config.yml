@@ -92,7 +92,7 @@ deploy:
 
 lazyload:
   enable: true
-  loadingImg: /img/loading.gif
+  loadingImg: /blog/img/loading.gif
 
 search:
   path: search.xml
