@@ -1,0 +1,31 @@
+if theme.tag_cards.enable
+  .tag-cards-container
+    .tag-sort-controls
+      .sort-options
+        label(for="sort-by") 排序方式：
+        select#sort-by
+          option(value="count") 按文章数量
+          option(value="name") 按名称
+        label(for="sort-order") 顺序：
+        select#sort-order
+          option(value="asc") 正序
+          option(value="desc") 倒序
+
+    .tag-cards-grid
+      each tag in site.tags.toArray().sort((a, b) => b.posts.length - a.posts.length)
+        - const tagConfig = theme.tag_cards.tags && theme.tag_cards.tags[tag.name] || {}
+        - const displayName = tagConfig.name || tag.name
+        - const description = tagConfig.description || `共 ${tag.posts.length} 篇文章`
+        - const imgSrc = tagConfig.img || theme.tag_cards.default_img
+        .tag-card
+          .tag-card-image
+            img(src=url_for(imgSrc) alt=displayName)
+          .tag-card-content
+            h3.tag-card-title
+              a(href=url_for(tag.path))= displayName
+            p.tag-card-description= description
+            .tag-card-meta
+              span.tag-post-count= `${tag.posts.length} 篇文章`
+else
+  .tag-cloud-list.text-center
+    !=cloudTags({source: site.tags, orderby: page.orderby || 'random', order: page.order || 1, minfontsize: 1.2, maxfontsize: 1.5, limit: 0, unit: 'em'})
