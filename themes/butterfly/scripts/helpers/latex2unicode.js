@@ -37,6 +37,15 @@ const MAP = {
   '\\operatorname': '', '\\limits': '', '\\nolimits': ''
 };
 
+// 把 convertFormula 明确定义在顶部
+const convertFormula = function(body) {
+  let t = body.replace(/\\[a-zA-Z]+/g, function(m) {
+    return Object.prototype.hasOwnProperty.call(MAP, m) ? MAP[m] : m.slice(1);
+  });
+  t = t.replace(/[{}]/g, '').replace(/\$/g, '');
+  return t;
+};
+
 function latexToUnicode(input) {
   if (!input) return '';
   let s = String(input);
@@ -44,7 +53,7 @@ function latexToUnicode(input) {
   // 1. 去 HTML 标签
   s = s.replace(/<[^>]+>/g, ' ');
 
-  // 2. 解码常见 HTML 实体（先命名，再数字，&amp; 放最后）
+  // 2. 解码常见 HTML 实体
   s = s.replace(/&lt;/g, '<')
        .replace(/&gt;/g, '>')
        .replace(/&quot;/g, '"')
@@ -52,16 +61,16 @@ function latexToUnicode(input) {
        .replace(/&nbsp;/g, ' ')
        .replace(/&zwnj;/g, '')
        .replace(/&zwj;/g, '');
-  s = s.replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)));
-  s = s.replace(/&#(\d+);/g, (_, d) => String.fromCharCode(parseInt(d, 10)));
+  s = s.replace(/&#x([0-9a-f]+);/gi, function(_, h) { return String.fromCharCode(parseInt(h, 16)); });
+  s = s.replace(/&#(\d+);/g, function(_, d) { return String.fromCharCode(parseInt(d, 10)); });
   s = s.replace(/&amp;/g, '&');
 
   // 3. 保护转义的 \$
   s = s.replace(/\\\$/g, '\u0000DOLLAR\u0000');
 
   // 4. 先 $$...$$，再 $...$
-  s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_, body) => convertFormula(body));
-  s = s.replace(/\$([^$\n]+?)\$/g, (_, body) => convertFormula(body));
+  s = s.replace(/\$\$([\s\S]*?)\$\$/g, function(_, body) { return convertFormula(body); });
+  s = s.replace(/\$([^$\n]+?)\$/g, function(_, body) { return convertFormula(body); });
 
   // 5. 还原转义美元
   s = s.replace(/\u0000DOLLAR\u0000/g, '$');
