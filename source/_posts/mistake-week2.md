@@ -1,7 +1,7 @@
 ---
-title: 错题本-第 2 周
-data: 2025-12-31 15:50
-tag: mistake
+title: 数学整理-第 2 周
+date: 2025-12-31 15:50
+tag: maths
 mathjax: true
 ---
 

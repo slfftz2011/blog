@@ -1,6 +1,6 @@
 ---
-title: 错题本-第 1 周
-data: 2025-12-26 21:15
+title: 数学整理-第 1 周
+date: 2025-12-26 21:15
 tag: mistake
 mathjax: true
 ---
