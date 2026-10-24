@@ -44,7 +44,7 @@ $$ 角平分线基本性质：其上点到角两边距离相等。 $$
 $$ \Downarrow $$
 $$ 转移 EG 到 \triangle AGF 内。$$
 
-## &zwnj;解体步骤&zwnj; *Solution*
+## &zwnj;解题步骤&zwnj; *Solution*
 
 ### $ 法1_{ \ \ Function 1}$
 
@@ -131,7 +131,7 @@ $$\boxed{CF = \sqrt{2}}$$
 4. $作 DH \perp CE， DH 交 AC 于 H$， 两个等腰，过。
 5. 其实可以排除了。硬要做就是往两边作高.
 
-## &zwnj;解体步骤&zwnj; *Solution*
+## &zwnj;解题步骤&zwnj; *Solution*
 
 略
 
