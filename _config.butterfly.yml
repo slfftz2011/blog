@@ -409,17 +409,22 @@ busuanzi:
 # if you set it to true, it will load mathjax/katex script in each page
 # if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' or 'katex: true' in page's front-matter)
 math:
+  # Choose: mathjax, katex
+  # Leave it empty if you don't need math
   use: mathjax
-  per_page: false
+  per_page: true
   hide_scrollbar: false
 
   mathjax:
-    enable: true
+    # Enable the contextual menu
     enableMenu: true
+    # Choose: all / ams / none, This controls whether equations are numbered and how
     tags: none
 
   katex:
+    # Enable the copy KaTeX formula
     copy_tex: false
+
 # --------------------------------------
 # Search
 # --------------------------------------
@@ -1079,7 +1084,7 @@ CDN:
     # local_search:
     # main:
     # main_css:
-    # mathjax:
+    mathjax: https://npm.elemecdn.com/mathjax@3/es5/tex-mml-chtml.js
     # medium_zoom:
     # mermaid:
     # meting_js:
