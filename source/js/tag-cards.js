@@ -7,33 +7,42 @@ class TagCardsSorter {
     this.sortOrderSelect = document.getElementById('sort-order');
     this.cardsGrid = document.querySelector('.tag-cards-grid');
 
-    this.init();
-  }
-
-  init() {
     if (!this.sortBySelect || !this.sortOrderSelect || !this.cardsGrid) return;
 
-    this.sortBySelect.addEventListener('change', () => this.sortCards());
-    this.sortOrderSelect.addEventListener('change', () => this.sortCards());
+    // 先解绑，防止重复绑定
+    this.sortBySelect.removeEventListener('change', this._boundSort);
+    this.sortOrderSelect.removeEventListener('change', this._boundSort);
 
-    // Initial sort
+    this._boundSort = () => this.sortCards();
+    this.sortBySelect.addEventListener('change', this._boundSort);
+    this.sortOrderSelect.addEventListener('change', this._boundSort);
+
     this.sortCards();
   }
 
   sortCards() {
-    const sortBy = this.sortBySelect.value;
-    const sortOrder = this.sortOrderSelect.value;
+    // 给 sortBy 和 sortOrder 一个安全的默认回退值
+    const sortBy = this.sortBySelect.value || 'count';
+    const sortOrder = this.sortOrderSelect.value || 'desc';
     const cards = Array.from(this.cardsGrid.children);
+
+    if (cards.length === 0) return;
 
     cards.sort((a, b) => {
       let aValue, bValue;
 
       if (sortBy === 'count') {
-        aValue = parseInt(a.querySelector('.tag-post-count').textContent.match(/\d+/)[0]);
-        bValue = parseInt(b.querySelector('.tag-post-count').textContent.match(/\d+/)[0]);
+        const aEl = a.querySelector('.tag-post-count');
+        const bEl = b.querySelector('.tag-post-count');
+        aValue = aEl ? parseInt((aEl.textContent.match(/\d+/) || ['0'])[0], 10) : 0;
+        bValue = bEl ? parseInt((bEl.textContent.match(/\d+/) || ['0'])[0], 10) : 0;
       } else if (sortBy === 'name') {
-        aValue = a.querySelector('.tag-card-title a').textContent.trim();
-        bValue = b.querySelector('.tag-card-title a').textContent.trim();
+        const aEl = a.querySelector('.tag-card-title a');
+        const bEl = b.querySelector('.tag-card-title a');
+        aValue = aEl ? aEl.textContent.trim() : '';
+        bValue = bEl ? bEl.textContent.trim() : '';
+      } else {
+        return 0;
       }
 
       if (sortOrder === 'asc') {
@@ -43,19 +52,20 @@ class TagCardsSorter {
       }
     });
 
-    // Re-append sorted cards
     cards.forEach(card => this.cardsGrid.appendChild(card));
   }
 }
 
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-  new TagCardsSorter();
-});
+// 单例，防止 PJAX 后重复创建
+let tagCardsSorterInstance = null;
 
-// Re-initialize on PJAX
-if (typeof btf !== 'undefined') {
-  btf.addGlobalFn('pjaxComplete', () => {
-    new TagCardsSorter();
-  });
+function initTagCardsSorter() {
+  if (tagCardsSorterInstance) return;
+  tagCardsSorterInstance = new TagCardsSorter();
 }
+
+// 首次加载
+document.addEventListener('DOMContentLoaded', initTagCardsSorter);
+
+// PJAX 切换页面后重新初始化（标准事件）
+window.addEventListener('pjax:complete', initTagCardsSorter);
