@@ -1089,7 +1089,7 @@ CDN:
     # local_search:
     # main:
     # main_css:
-    # mathjax: /js/tex-mml-chtml.js
+    mathjax: https://cdn.jsdmirror.com/npm/mathjax@4/tex-mml-chtml.js
     # medium_zoom:
     # mermaid:
     # meting_js:
