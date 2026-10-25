@@ -1,7 +1,8 @@
 mixin articleSort(posts)
+  - const sortedPosts = posts.sort('-date')
   .article-sort
     - let year
-    - posts.forEach(article => {
+    - sortedPosts.forEach(article => {
       - const tempYear = date(article.date, 'YYYY')
       - const noCoverClass = article.cover === false || !theme.cover.archives_enable ? 'no-article-cover' : ''
       - const title = article.title || _p('no_title')
