@@ -13,3 +13,14 @@ tags: test
 相册测试：![image](/images/img_1792904792387.jpg)
 
 压缩测试：![image](/images/img_1792912999289_7ktgo8.jpg)
+
+
+| 列1 | 列2 |
+| --- | --- |
+| 值 | 值 |
+
+
+```mermaid
+graph TD
+  A[开始] --> B[结束]
+```
