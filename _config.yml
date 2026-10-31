@@ -98,3 +98,7 @@ search:
   path: search.xml
   field: post
   content: true
+
+# hexo-reference-plus
+refplus:
+  tippy: true
