@@ -26,27 +26,22 @@ if !theme.disable_top_img && page.top_img !== false
     - bg_img = getBgPath(top_img)
     - headerClassName = globalPageType === 'home' ? 'full_page' : globalPageType === 'post' ? 'post-bg' : 'not-home-page'
 
-header#page-header(class=`${headerClassName + isFixedClass}` style=bg_img)
-  include ./nav.pug
+header#page-header(class=isHomeClass)
+  img#post-cover(src=url_for(top_img) alt='cover')
+  !=partial('includes/header/nav', {}, {cache:theme.fragment_cache})
   if top_img !== false
-    if globalPageType === 'post'
+    if is_post()
       include ./post-info.pug
-    else if globalPageType === 'home'
+    else if is_home() 
       #site-info
-        h1#site-title=config.title
-        if theme.subtitle.enable
-          - var loadSubJs = true
-          #site-subtitle
-            span#subtitle
-        if theme.social
+        h1#site-title=site_title
+        #site-subtitle
+          span#subtitle
+        if(theme.social)
           #site_social_icons
-            !=partial('includes/header/social', {}, {cache: true})
+            !=fragment_cache('social', function(){return partial('includes/header/social')})
       #scroll-down
         i.fas.fa-angle-down.scroll-down-effects
     else
       #page-site-info
-        h1#site-title=page.title || page.tag || page.category
-  else
-    //- improve seo
-    if globalPageType !== 'post'
-      h1.title-seo=page.title || page.tag || page.category || config.title
+        h1#site-title=site_title
