@@ -63,8 +63,8 @@ tags:
 
 - **0.4 高效利用 AI 做静态开发**
 
-[^1] 中国数字经济规模及贡献率相关报道. https://wxb.xzdw.gov.cn/wlcb/cbgz/202411/t20241118_526473.html
-[^2] 联合国新闻：数字系统与社会依赖相关报道. https://news.un.org/es/story/2026/05/1541416#1
-[^3] 国际电信联盟（ITU）：Critical Digital Risks 报告. https://www.itu.int/zh/mediacentre/Pages/PR-2026-05-05-Critical-Digital-Risks-report.aspx#1
+[^1]: 中国数字经济规模及贡献率相关报道. https://wxb.xzdw.gov.cn/wlcb/cbgz/202411/t20241118_526473.html
+[^2]: 联合国新闻：数字系统与社会依赖相关报道. https://news.un.org/es/story/2026/05/1541416#1
+[^3]: 国际电信联盟（ITU）：Critical Digital Risks 报告. https://www.itu.int/zh/mediacentre/Pages/PR-2026-05-05-Critical-Digital-Risks-report.aspx#1
 
 > 以上资料由 AI 协助检索整理，如有疏漏欢迎指正。
