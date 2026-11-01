@@ -298,6 +298,118 @@ $$\boxed{-1\leq k \leq 2 且 k \neq 0}$$
       </tags>
   </entry>
   <entry>
+    <title>数学整理-第 2 周</title>
+    <url>/blog/2025/12/31/mistake-week2/</url>
+    <content><![CDATA[第 2 周的数学错题整理…
+
+    I. 专项突破一 - T4
+    截长补短的辅助线作法
+
+‌题目描述‌ Description
+如图， $ 在 \triangle ABC 中 $， $ AB=AC $， $ AD 是 BC 边上的高线 $， $ EF 垂直平分 AB $， $ 分别交 AB，AC，AD 于点 E,F,G $。 $ 若 \angle BAC=45^{\circ}， EG=1 $， $ 则 CF 长为 \underline{\ \ \ \ \ \ }$。
+
+    
+
+‌题目分析‌ Analysis
+第一种思路：
+$$ 题目要求 CF 的长。而已知 EG 的长。$$
+$$ \Downarrow $$
+$$ 可以转移 CF 到 EG 或其所在线段上。 $$
+$$ \Downarrow $$
+$$ 可以尝试使用相似三角形求。 $$
+$$ \Downarrow $$
+$$ 构造包含这两条边的相似三角形 $$
+
+第二种思路：
+$$ 有等腰和高线。$$
+$$ \Downarrow $$
+$$ 三线合一得到角平分线。 $$
+$$ \Downarrow $$
+$$ 角平分线基本性质：其上点到角两边距离相等。 $$
+$$ \Downarrow $$
+$$ 转移 EG 到 \triangle AGF 内。$$
+‌解题步骤‌ Solution
+$ 法1_{ \ \ Function 1}$
+
+    
+
+$$作 GH \perp AF$$
+$$\because 在 \triangle ABC 中，AB=AC，AD 为 BC 边上的高线$$
+$$\therefore \angle BAD = \angle CAD$$
+$$\because EF 垂直平分 AB$$
+$$\therefore EF \perp AB， 即 \angle AEF = 90^{\circ}$$
+$$\because GH \perp AF，EG = 1$$
+$$\therefore GF = EG = 1$$
+$$\because \angle BAC = 45^{\circ}$$
+$$\therefore \angle AFE = 180^{\circ} - \angle BAC - \angle AEF = 45^{\circ}$$
+$$\therefore \triangle FGH 为等腰直角三角形$$
+$$\therefore FG = \sqrt{2}$$
+$$\therefore EF = \sqrt{2} + 1$$
+$$\therefore AC = AB = 2 \sqrt{2} + 2，AE = \sqrt{2} + 2$$
+$$\therefore CF = \sqrt{2} （勾股，这里不过多赘述）$$
+
+$ 法2_{ \ \ Function 2}$
+
+    
+
+$$连结 BF$$
+$$\because EF 垂直平分 AB$$
+$$\therefore \angle AEF = 90^{\circ}，EF 平分 \angle AFB$$
+$$\because \angle BAC = 45^{\circ}$$
+$$\therefore \angle BFC = 2 \angle AFE = 90^{\circ}$$
+$$\because AB = AC$$
+$$\therefore \angle ABD = \angle C$$
+$$\because AD 为高线$$
+$$\therefore \angle BAD + \angle ABD = \angle FBC + \angle C = 90^{\circ}$$
+$$\therefore \angle BAD = \angle FBC$$
+$$在 \triangle AEG 和 \triangle BFC 中$$
+$$
+\begin{cases}
+\angle BAD = \angle FBC\\
+\angle ABD = \angle C
+\end{cases}
+$$
+$$\therefore \triangle AEG \sim \triangle BFC$$
+$$\therefore \frac{CF}{EG} = \frac{BF}{AE} = \frac{\sqrt{2}}{1}$$
+$$\because EG = 1$$
+$$\therefore CF = \sqrt{2}$$
+
+答案如下：
+$$\boxed{CF = \sqrt{2}}$$
+
+
+    II. U1 复习 - T10
+
+‌题目描述‌ Description
+如图， $ 在 \triangle ABC 中 $， $ \angle ABC = 60^{\circ} $， $ AD，CE分别平分 \angle BAC 和 \angle ACB。 下列说法正确的有 $
+
+$\angle AFC = 120^{\circ}$
+$S_{\triangle ABD} = S_{\triangle ADC}$
+$若 AB = 2AE， 则 CE \perp AB$
+$CD + AE = AC$
+$S_{\triangle AEF} : S_{\triangle FDC} = AF : FC$
+
+
+    
+
+‌题目分析‌ Analysis
+
+$\frac{1}{2} \angle ABC + 90^{\circ}$ ，过。
+瞪眼法，这并不是等边三角形。
+三线合一，过。
+$作 DH \perp CE， DH 交 AC 于 H$， 两个等腰，过。
+其实可以排除了。硬要做就是往两边作高.
+
+‌解题步骤‌ Solution
+略
+答案如下：
+$$\boxed{1,2,4,5}$$
+]]></content>
+      <tags>
+        <tag>mistake</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Web 开发系列教程  §0.1 为什么学 HTML/CSS</title>
     <url>/blog/2026/10/31/webdev-i-0.1/</url>
     <content><![CDATA[
@@ -485,118 +597,6 @@ AI 不能替你做什么：不理解就复制、跳过基础、一口气生成�
       </tags>
   </entry>
   <entry>
-    <title>数学整理-第 2 周</title>
-    <url>/blog/2025/12/31/mistake-week2/</url>
-    <content><![CDATA[第 2 周的数学错题整理…
-
-    I. 专项突破一 - T4
-    截长补短的辅助线作法
-
-‌题目描述‌ Description
-如图， $ 在 \triangle ABC 中 $， $ AB=AC $， $ AD 是 BC 边上的高线 $， $ EF 垂直平分 AB $， $ 分别交 AB，AC，AD 于点 E,F,G $。 $ 若 \angle BAC=45^{\circ}， EG=1 $， $ 则 CF 长为 \underline{\ \ \ \ \ \ }$。
-
-    
-
-‌题目分析‌ Analysis
-第一种思路：
-$$ 题目要求 CF 的长。而已知 EG 的长。$$
-$$ \Downarrow $$
-$$ 可以转移 CF 到 EG 或其所在线段上。 $$
-$$ \Downarrow $$
-$$ 可以尝试使用相似三角形求。 $$
-$$ \Downarrow $$
-$$ 构造包含这两条边的相似三角形 $$
-
-第二种思路：
-$$ 有等腰和高线。$$
-$$ \Downarrow $$
-$$ 三线合一得到角平分线。 $$
-$$ \Downarrow $$
-$$ 角平分线基本性质：其上点到角两边距离相等。 $$
-$$ \Downarrow $$
-$$ 转移 EG 到 \triangle AGF 内。$$
-‌解题步骤‌ Solution
-$ 法1_{ \ \ Function 1}$
-
-    
-
-$$作 GH \perp AF$$
-$$\because 在 \triangle ABC 中，AB=AC，AD 为 BC 边上的高线$$
-$$\therefore \angle BAD = \angle CAD$$
-$$\because EF 垂直平分 AB$$
-$$\therefore EF \perp AB， 即 \angle AEF = 90^{\circ}$$
-$$\because GH \perp AF，EG = 1$$
-$$\therefore GF = EG = 1$$
-$$\because \angle BAC = 45^{\circ}$$
-$$\therefore \angle AFE = 180^{\circ} - \angle BAC - \angle AEF = 45^{\circ}$$
-$$\therefore \triangle FGH 为等腰直角三角形$$
-$$\therefore FG = \sqrt{2}$$
-$$\therefore EF = \sqrt{2} + 1$$
-$$\therefore AC = AB = 2 \sqrt{2} + 2，AE = \sqrt{2} + 2$$
-$$\therefore CF = \sqrt{2} （勾股，这里不过多赘述）$$
-
-$ 法2_{ \ \ Function 2}$
-
-    
-
-$$连结 BF$$
-$$\because EF 垂直平分 AB$$
-$$\therefore \angle AEF = 90^{\circ}，EF 平分 \angle AFB$$
-$$\because \angle BAC = 45^{\circ}$$
-$$\therefore \angle BFC = 2 \angle AFE = 90^{\circ}$$
-$$\because AB = AC$$
-$$\therefore \angle ABD = \angle C$$
-$$\because AD 为高线$$
-$$\therefore \angle BAD + \angle ABD = \angle FBC + \angle C = 90^{\circ}$$
-$$\therefore \angle BAD = \angle FBC$$
-$$在 \triangle AEG 和 \triangle BFC 中$$
-$$
-\begin{cases}
-\angle BAD = \angle FBC\\
-\angle ABD = \angle C
-\end{cases}
-$$
-$$\therefore \triangle AEG \sim \triangle BFC$$
-$$\therefore \frac{CF}{EG} = \frac{BF}{AE} = \frac{\sqrt{2}}{1}$$
-$$\because EG = 1$$
-$$\therefore CF = \sqrt{2}$$
-
-答案如下：
-$$\boxed{CF = \sqrt{2}}$$
-
-
-    II. U1 复习 - T10
-
-‌题目描述‌ Description
-如图， $ 在 \triangle ABC 中 $， $ \angle ABC = 60^{\circ} $， $ AD，CE分别平分 \angle BAC 和 \angle ACB。 下列说法正确的有 $
-
-$\angle AFC = 120^{\circ}$
-$S_{\triangle ABD} = S_{\triangle ADC}$
-$若 AB = 2AE， 则 CE \perp AB$
-$CD + AE = AC$
-$S_{\triangle AEF} : S_{\triangle FDC} = AF : FC$
-
-
-    
-
-‌题目分析‌ Analysis
-
-$\frac{1}{2} \angle ABC + 90^{\circ}$ ，过。
-瞪眼法，这并不是等边三角形。
-三线合一，过。
-$作 DH \perp CE， DH 交 AC 于 H$， 两个等腰，过。
-其实可以排除了。硬要做就是往两边作高.
-
-‌解题步骤‌ Solution
-略
-答案如下：
-$$\boxed{1,2,4,5}$$
-]]></content>
-      <tags>
-        <tag>mistake</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Web 开发系列教程（一）目录：页面结构与样式基础</title>
     <url>/blog/2026/10/26/webdev-i-contents/</url>
     <content><![CDATA[
@@ -607,9 +607,9 @@ $$\boxed{1,2,4,5}$$
 
 欢迎来到 Web 开发系列教程！这里是第一部的目录页。
 每天你打开手机、电脑，看到的大部分东西都和 Web 有关：新闻页面、购物网站、公司官网、在线文档、后台管理系统，甚至很多手机 App 里嵌着的界面，底层也是网页技术。浏览器早就不只是“看网页的工具”，它更像一个万能的操作系统——只要有屏幕、有网络，Web 就能把信息送到人面前。
-自 1989 年万维网核心构想提出至今，已经过去三十七年。从早期只能像陈列柜一样展示信息的静态 HTML 页面，到论坛、博客、社交媒体的兴起，再到今天与物联网和在线服务深度融合，Web 的应用领域和体系外延仍在不断扩展。据文中引用资料，2023 年中国数字经济规模达到 53.9 万亿元，对 GDP 增长的贡献率达到 66.45%。Web 早已不是经济中的一个“部门”，而是渗透进几乎所有部门的基础介质：在农业端，数智系统让浇水施肥由数据驱动；在流通端，电商平台通过整合订单与行为数据，把生产端与消费端直接匹配，在全国范围内优化仓储与运输配置。Web 降低了连接成本、压缩了匹配摩擦，使传统产业获得“放大、叠加、倍增”的效率提升。 [^1]
-在生活层面，这种嵌入更为细密。支付、政务、社交、医疗挂号、交通出行，都越来越依赖 Web 连接与数字系统。联合国新闻网站的一篇报道有个说法很到位：“数字系统已经如此深入地融入我们的生活，以至于我们几乎注意不到它们——直到它们失效。”（中文为作者译） [^2] Web 的“重要作用”之所以难以被完整列举，正是因为它的成功之处在于变得不可见：它成了水、电之外的另一层默认基础设施，只不过这一层承载的是协调与信息，而非物质或能量本身。
-倘若哪天 Web 大面积失效……通信与支付将中断，医疗系统将停摆，金融与供应链将受阻，经济损失更难以估量。更重要的是，社会对数字系统的依赖日益加深，却未能保持足够的模拟技能和离线备用方案；当大型数字系统出现故障时，“离线替代方案往往已不再可用”。这意味着，Web 失效的严重性不仅来自数字系统本身的重要性，还来自退出数字系统之后的无处可退——纸质流程、人工调度、现金交易、线下协调等能力，在效率逻辑下已被大幅裁撤。 [^3] 灾难来临时，人类未必能及时找到替代方案。说了这么多，其实就一句：Web 对现代社会很重要，值得认真学一学。
+自 1989 年万维网核心构想提出至今，已经过去三十七年。从早期只能像陈列柜一样展示信息的静态 HTML 页面，到论坛、博客、社交媒体的兴起，再到今天与物联网和在线服务深度融合，Web 的应用领域和体系外延仍在不断扩展。据文中引用资料，2023 年中国数字经济规模达到 53.9 万亿元，对 GDP 增长的贡献率达到 66.45%。Web 早已不是经济中的一个“部门”，而是渗透进几乎所有部门的基础介质：在农业端，数智系统让浇水施肥由数据驱动；在流通端，电商平台通过整合订单与行为数据，把生产端与消费端直接匹配，在全国范围内优化仓储与运输配置。Web 降低了连接成本、压缩了匹配摩擦，使传统产业获得“放大、叠加、倍增”的效率提升。 [1]
+在生活层面，这种嵌入更为细密。支付、政务、社交、医疗挂号、交通出行，都越来越依赖 Web 连接与数字系统。联合国新闻网站的一篇报道有个说法很到位：“数字系统已经如此深入地融入我们的生活，以至于我们几乎注意不到它们——直到它们失效。”（中文为作者译） [2] Web 的“重要作用”之所以难以被完整列举，正是因为它的成功之处在于变得不可见：它成了水、电之外的另一层默认基础设施，只不过这一层承载的是协调与信息，而非物质或能量本身。
+倘若哪天 Web 大面积失效……通信与支付将中断，医疗系统将停摆，金融与供应链将受阻，经济损失更难以估量。更重要的是，社会对数字系统的依赖日益加深，却未能保持足够的模拟技能和离线备用方案；当大型数字系统出现故障时，“离线替代方案往往已不再可用”。这意味着，Web 失效的严重性不仅来自数字系统本身的重要性，还来自退出数字系统之后的无处可退——纸质流程、人工调度、现金交易、线下协调等能力，在效率逻辑下已被大幅裁撤。 [3] 灾难来临时，人类未必能及时找到替代方案。说了这么多，其实就一句：Web 对现代社会很重要，值得认真学一学。
 这几年变化很快，AI 能写代码、能生成页面，工具也越来越多。但越是这样，越值得把 Web 的基础弄明白：知道自己想要什么效果、知道一段代码为什么这样写、知道出了问题该去哪里找，这些判断力不会因为工具变强而贬值，反而会变得更值钱。Web 也依然是普通人最容易接触、最容易做出东西的技术之一——静态页面阶段几乎不需要配置复杂开发环境，也不必安装庞大的 SDK；它不像 Python、C、Java 那样有较高的入门门槛，也不需要昂贵设备。一个浏览器、一个编辑器，就能开始。
 开设这个系列，是因为在 AI 工具日益普及的当下，Web 的作用举足轻重，而很多人并不清楚怎么利用它：有人想少走弯路，有人想提高效率，有人想多一块求职敲门砖，有人想让个人数字资产更自主，也有人只是想把自己的兴趣和想法实现出来。另一方面，中小学信息技术课长期不够受重视，手机又太早、太全面普及，结果不少年轻人能刷一整天手机，却不太会熟练使用计算机，更别说 Web 开发了。不少家长早早让孩子学编程，这本身没错，但如果只盯着“抢跑”，忽略兴趣和成就感，孩子容易还没入门就先累了；这个圈子的入口也会越来越挤，良性竞争反而被破坏。学 Web 不一定非要跟别人挤同一条赛道，学习过程本身也能练系统思维和调试能力。
 很多人想学 Web，却被几件事劝退：资料太散、术语太多、路线图太吓人，或者一上来就被要求“先学完一整套体系”。这个系列想换一种走法——从能看见的东西开始，一步一步来，不急着堆概念。你会先做出一个能打开的页面，再让它变好看、变好用，然后才慢慢接触更复杂的工具和后端。每一部分都有明确的小目标，学完就能拿出一个像样的东西。
@@ -644,11 +644,19 @@ $$\boxed{1,2,4,5}$$
 0.4 高效利用 AI 做静态开发
 
 
-[^1] 中国数字经济规模及贡献率相关报道. https://wxb.xzdw.gov.cn/wlcb/cbgz/202411/t20241118_526473.html
-[^2] 联合国新闻：数字系统与社会依赖相关报道. https://news.un.org/es/story/2026/05/1541416#1
-[^3] 国际电信联盟（ITU）：Critical Digital Risks 报告. https://www.itu.int/zh/mediacentre/Pages/PR-2026-05-05-Critical-Digital-Risks-report.aspx#1
 
 以上资料由 AI 协助检索整理，如有疏漏欢迎指正。
+
+
+
+
+中国数字经济规模及贡献率相关报道. https://wxb.xzdw.gov.cn/wlcb/cbgz/202411/t20241118_526473.html ↩︎
+
+联合国新闻：数字系统与社会依赖相关报道. https://news.un.org/es/story/2026/05/1541416#1 ↩︎
+
+国际电信联盟（ITU）：Critical Digital Risks 报告. https://www.itu.int/zh/mediacentre/Pages/PR-2026-05-05-Critical-Digital-Risks-report.aspx#1 ↩︎
+
+
 
 ]]></content>
       <tags>
