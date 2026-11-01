@@ -343,7 +343,7 @@ search:
   algolia_search:
     hitsPerPage: 6
   local_search:
-    preload: false            # 预加载搜索数据
+    preload: true            # 预加载搜索数据
     top_n_per_article: 1      # 每篇显示前 n 条，-1=全部
     unescape: false
     pagination:

@@ -99,6 +99,9 @@ search:
   field: post
   content: true
 
-# hexo-reference-plus
-refplus:
-  tippy: true
+marked:
+  gfm: true        # 启用 GitHub 风格的 Markdown
+  breaks: false
+  pedantic: false
+  smartLists: true
+  smartypants: true
