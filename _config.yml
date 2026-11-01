@@ -99,9 +99,12 @@ search:
   field: post
   content: true
 
-marked:
-  gfm: true        # 启用 GitHub 风格的 Markdown
-  breaks: false
-  pedantic: false
-  smartLists: true
-  smartypants: true
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: false
+    linkify: true
+    typographer: true
+  plugins:
+    - markdown-it-footnote

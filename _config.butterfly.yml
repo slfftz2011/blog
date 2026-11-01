@@ -776,8 +776,9 @@ inject:
 # CDN
 # ============================================================
 CDN:
-  internal_provider: local    # local/jsdelivr/unpkg/cdnjs/custom
-  third_party_provider: jsdelivr
+  CDN:
+  internal_provider: local
+  third_party_provider: local
   version: true               # URL 带版本号
   custom_format:              # 自定义 CDN 格式
   option:
@@ -816,7 +817,7 @@ CDN:
     # local_search:
     # main:
     # main_css:
-    mathjax: https://cdn.jsdmirror.com/npm/mathjax@4/tex-mml-chtml.js
+    # mathjax: https://cdn.jsdmirror.com/npm/mathjax@4/tex-mml-chtml.js
     # medium_zoom:
     # mermaid:
     # meting_js:
