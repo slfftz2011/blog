@@ -768,7 +768,7 @@ css_prefix: true              # 自动加浏览器厂商前缀
 # ============================================================
 inject:
   head:
-    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/blog/css/custom.css">
   bottom:
     - <script src="/blog/js/tag-cards.js"></script>
 
