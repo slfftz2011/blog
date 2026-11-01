@@ -1,0 +1,27 @@
+/* 脚注上标角标样式 */
+.footnote-ref {
+    font-size: 0.75em;
+    vertical-align: super;
+    line-height: 0;
+    color: #007acc; /* 可以换成你的主题色 */
+    text-decoration: none;
+    padding: 0 0.2em;
+  }
+  .footnote-ref:hover {
+    text-decoration: underline;
+  }
+  
+  /* 文末脚注区域样式 */
+  .footnotes {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+  }
+  .footnotes-list {
+    padding-left: 1.2em;
+  }
+  .footnote-backref {
+    margin-left: 0.5em;
+    text-decoration: none;
+  }
