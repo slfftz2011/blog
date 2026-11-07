@@ -1,7 +1,7 @@
 ---
 title: 关于我，和本站
 date: 2026-10-24 18:40
-tag: about
+tags: about
 ---
 
 # 关于我，和本站
