@@ -59,9 +59,9 @@ tags:
 
 - **{% post_link webdev-i-0.2 0.2 工具与环境准备 %}**
 
-- **{% post_link webdev-i-0.2 0.2 0.3 学习方法：多查多用，别死记硬背 %}**
+- **{% post_link webdev-i-0.3 0.3 学习方法：多查多用，别死记硬背 %}**
 
-- **0.4 高效利用 AI 做静态开发**
+- **{% post_link webdev-i-0.4 0.4 高效利用 AI 做静态开发 %}**
 
 [^1]: 中国数字经济规模及贡献率相关报道. https://wxb.xzdw.gov.cn/wlcb/cbgz/202411/t20241118_526473.html
 [^2]: 联合国新闻：数字系统与社会依赖相关报道. https://news.un.org/es/story/2026/05/1541416#1
