@@ -1,171 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>数学整理-第 1 周</title>
-    <url>/blog/2025/12/26/mistake-week1/</url>
-    <content><![CDATA[第 1 周的数学错题整理…
-
-    I. 被压一头的一次函数
-    根据不等式求一次函数参数取值范围
-
-‌题目描述‌ Description
-如图， $ y1=-x+2 $， $ y2=kx-1 (k \neq 0, k为常数) $， 为使 $ \forall x&lt;1, y1 &gt; y2 恒成立$, 求 $ k $ 的取值范围。
-
-    
-
-‌题目分析‌ Analysis
-思路如下：
-$$求交点坐标（有交点时）$$
-$$\Downarrow$$
-$$联立两个解析式，得 -x+2=kx-1$$
-$$\Downarrow$$
-$$解得 (\frac{3}{k+1}, \frac{2k-1}{k+1})$$
-画图…
-
-    
-    
-
-两图为满足要求的临界。图1的斜率再高就会与 $ y1 $ 交于 $x &lt; 1$ 的位置，不满足条件；图2同理。
-因此 $ y2 $ 应绘制于实线圆弧内。
-
-    
-
-$$求图1临界， 观察到交点横坐标为1$$
-$$\Downarrow$$
-$$得：\frac{3}{k+1}=1$$
-$$\Downarrow$$
-$$解得：k=2$$
-
-$$求图2临界， 观察到无交点$$
-$$\Downarrow$$
-$$得：k+1=0$$
-$$\Downarrow$$
-$$解得：k=-1$$
-
-$$注意到题目要求k\neq0， 记得写上$$
-‌解体步骤‌ Solution
-见分析。
-答案如下：
-$$\boxed{-1\leq k \leq 2 且 k \neq 0}$$
-
-]]></content>
-      <tags>
-        <tag>mistake</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数学整理-第 2 周</title>
-    <url>/blog/2025/12/31/mistake-week2/</url>
-    <content><![CDATA[第 2 周的数学错题整理…
-
-    I. 专项突破一 - T4
-    截长补短的辅助线作法
-
-‌题目描述‌ Description
-如图， $ 在 \triangle ABC 中 $， $ AB=AC $， $ AD 是 BC 边上的高线 $， $ EF 垂直平分 AB $， $ 分别交 AB，AC，AD 于点 E,F,G $。 $ 若 \angle BAC=45^{\circ}， EG=1 $， $ 则 CF 长为 \underline{\ \ \ \ \ \ }$。
-
-    
-
-‌题目分析‌ Analysis
-第一种思路：
-$$ 题目要求 CF 的长。而已知 EG 的长。$$
-$$ \Downarrow $$
-$$ 可以转移 CF 到 EG 或其所在线段上。 $$
-$$ \Downarrow $$
-$$ 可以尝试使用相似三角形求。 $$
-$$ \Downarrow $$
-$$ 构造包含这两条边的相似三角形 $$
-
-第二种思路：
-$$ 有等腰和高线。$$
-$$ \Downarrow $$
-$$ 三线合一得到角平分线。 $$
-$$ \Downarrow $$
-$$ 角平分线基本性质：其上点到角两边距离相等。 $$
-$$ \Downarrow $$
-$$ 转移 EG 到 \triangle AGF 内。$$
-‌解题步骤‌ Solution
-$ 法1_{ \ \ Function 1}$
-
-    
-
-$$作 GH \perp AF$$
-$$\because 在 \triangle ABC 中，AB=AC，AD 为 BC 边上的高线$$
-$$\therefore \angle BAD = \angle CAD$$
-$$\because EF 垂直平分 AB$$
-$$\therefore EF \perp AB， 即 \angle AEF = 90^{\circ}$$
-$$\because GH \perp AF，EG = 1$$
-$$\therefore GF = EG = 1$$
-$$\because \angle BAC = 45^{\circ}$$
-$$\therefore \angle AFE = 180^{\circ} - \angle BAC - \angle AEF = 45^{\circ}$$
-$$\therefore \triangle FGH 为等腰直角三角形$$
-$$\therefore FG = \sqrt{2}$$
-$$\therefore EF = \sqrt{2} + 1$$
-$$\therefore AC = AB = 2 \sqrt{2} + 2，AE = \sqrt{2} + 2$$
-$$\therefore CF = \sqrt{2} （勾股，这里不过多赘述）$$
-
-$ 法2_{ \ \ Function 2}$
-
-    
-
-$$连结 BF$$
-$$\because EF 垂直平分 AB$$
-$$\therefore \angle AEF = 90^{\circ}，EF 平分 \angle AFB$$
-$$\because \angle BAC = 45^{\circ}$$
-$$\therefore \angle BFC = 2 \angle AFE = 90^{\circ}$$
-$$\because AB = AC$$
-$$\therefore \angle ABD = \angle C$$
-$$\because AD 为高线$$
-$$\therefore \angle BAD + \angle ABD = \angle FBC + \angle C = 90^{\circ}$$
-$$\therefore \angle BAD = \angle FBC$$
-$$在 \triangle AEG 和 \triangle BFC 中$$
-$$
-\begin{cases}
-\angle BAD = \angle FBC\\
-\angle ABD = \angle C
-\end{cases}
-$$
-$$\therefore \triangle AEG \sim \triangle BFC$$
-$$\therefore \frac{CF}{EG} = \frac{BF}{AE} = \frac{\sqrt{2}}{1}$$
-$$\because EG = 1$$
-$$\therefore CF = \sqrt{2}$$
-
-答案如下：
-$$\boxed{CF = \sqrt{2}}$$
-
-
-    II. U1 复习 - T10
-
-‌题目描述‌ Description
-如图， $ 在 \triangle ABC 中 $， $ \angle ABC = 60^{\circ} $， $ AD，CE分别平分 \angle BAC 和 \angle ACB。 下列说法正确的有 $
-
-$\angle AFC = 120^{\circ}$
-$S_{\triangle ABD} = S_{\triangle ADC}$
-$若 AB = 2AE， 则 CE \perp AB$
-$CD + AE = AC$
-$S_{\triangle AEF} : S_{\triangle FDC} = AF : FC$
-
-
-    
-
-‌题目分析‌ Analysis
-
-$\frac{1}{2} \angle ABC + 90^{\circ}$ ，过。
-瞪眼法，这并不是等边三角形。
-三线合一，过。
-$作 DH \perp CE， DH 交 AC 于 H$， 两个等腰，过。
-其实可以排除了。硬要做就是往两边作高.
-
-‌解题步骤‌ Solution
-略
-答案如下：
-$$\boxed{1,2,4,5}$$
-]]></content>
-      <tags>
-        <tag>mistake</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于我，和本站</title>
     <url>/blog/2026/10/24/about_me/</url>
     <content><![CDATA[关于我，和本站
@@ -410,6 +245,257 @@ Wake up.该醒了。
       </tags>
   </entry>
   <entry>
+    <title>数学整理-第 1 周</title>
+    <url>/blog/2025/12/26/mistake-week1/</url>
+    <content><![CDATA[第 1 周的数学错题整理…
+
+    I. 被压一头的一次函数
+    根据不等式求一次函数参数取值范围
+
+‌题目描述‌ Description
+如图， $ y1=-x+2 $， $ y2=kx-1 (k \neq 0, k为常数) $， 为使 $ \forall x&lt;1, y1 &gt; y2 恒成立$, 求 $ k $ 的取值范围。
+
+    
+
+‌题目分析‌ Analysis
+思路如下：
+$$求交点坐标（有交点时）$$
+$$\Downarrow$$
+$$联立两个解析式，得 -x+2=kx-1$$
+$$\Downarrow$$
+$$解得 (\frac{3}{k+1}, \frac{2k-1}{k+1})$$
+画图…
+
+    
+    
+
+两图为满足要求的临界。图1的斜率再高就会与 $ y1 $ 交于 $x &lt; 1$ 的位置，不满足条件；图2同理。
+因此 $ y2 $ 应绘制于实线圆弧内。
+
+    
+
+$$求图1临界， 观察到交点横坐标为1$$
+$$\Downarrow$$
+$$得：\frac{3}{k+1}=1$$
+$$\Downarrow$$
+$$解得：k=2$$
+
+$$求图2临界， 观察到无交点$$
+$$\Downarrow$$
+$$得：k+1=0$$
+$$\Downarrow$$
+$$解得：k=-1$$
+
+$$注意到题目要求k\neq0， 记得写上$$
+‌解体步骤‌ Solution
+见分析。
+答案如下：
+$$\boxed{-1\leq k \leq 2 且 k \neq 0}$$
+
+]]></content>
+      <tags>
+        <tag>mistake</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数学整理-第 2 周</title>
+    <url>/blog/2025/12/31/mistake-week2/</url>
+    <content><![CDATA[第 2 周的数学错题整理…
+
+    I. 专项突破一 - T4
+    截长补短的辅助线作法
+
+‌题目描述‌ Description
+如图， $ 在 \triangle ABC 中 $， $ AB=AC $， $ AD 是 BC 边上的高线 $， $ EF 垂直平分 AB $， $ 分别交 AB，AC，AD 于点 E,F,G $。 $ 若 \angle BAC=45^{\circ}， EG=1 $， $ 则 CF 长为 \underline{\ \ \ \ \ \ }$。
+
+    
+
+‌题目分析‌ Analysis
+第一种思路：
+$$ 题目要求 CF 的长。而已知 EG 的长。$$
+$$ \Downarrow $$
+$$ 可以转移 CF 到 EG 或其所在线段上。 $$
+$$ \Downarrow $$
+$$ 可以尝试使用相似三角形求。 $$
+$$ \Downarrow $$
+$$ 构造包含这两条边的相似三角形 $$
+
+第二种思路：
+$$ 有等腰和高线。$$
+$$ \Downarrow $$
+$$ 三线合一得到角平分线。 $$
+$$ \Downarrow $$
+$$ 角平分线基本性质：其上点到角两边距离相等。 $$
+$$ \Downarrow $$
+$$ 转移 EG 到 \triangle AGF 内。$$
+‌解题步骤‌ Solution
+$ 法1_{ \ \ Function 1}$
+
+    
+
+$$作 GH \perp AF$$
+$$\because 在 \triangle ABC 中，AB=AC，AD 为 BC 边上的高线$$
+$$\therefore \angle BAD = \angle CAD$$
+$$\because EF 垂直平分 AB$$
+$$\therefore EF \perp AB， 即 \angle AEF = 90^{\circ}$$
+$$\because GH \perp AF，EG = 1$$
+$$\therefore GF = EG = 1$$
+$$\because \angle BAC = 45^{\circ}$$
+$$\therefore \angle AFE = 180^{\circ} - \angle BAC - \angle AEF = 45^{\circ}$$
+$$\therefore \triangle FGH 为等腰直角三角形$$
+$$\therefore FG = \sqrt{2}$$
+$$\therefore EF = \sqrt{2} + 1$$
+$$\therefore AC = AB = 2 \sqrt{2} + 2，AE = \sqrt{2} + 2$$
+$$\therefore CF = \sqrt{2} （勾股，这里不过多赘述）$$
+
+$ 法2_{ \ \ Function 2}$
+
+    
+
+$$连结 BF$$
+$$\because EF 垂直平分 AB$$
+$$\therefore \angle AEF = 90^{\circ}，EF 平分 \angle AFB$$
+$$\because \angle BAC = 45^{\circ}$$
+$$\therefore \angle BFC = 2 \angle AFE = 90^{\circ}$$
+$$\because AB = AC$$
+$$\therefore \angle ABD = \angle C$$
+$$\because AD 为高线$$
+$$\therefore \angle BAD + \angle ABD = \angle FBC + \angle C = 90^{\circ}$$
+$$\therefore \angle BAD = \angle FBC$$
+$$在 \triangle AEG 和 \triangle BFC 中$$
+$$
+\begin{cases}
+\angle BAD = \angle FBC\\
+\angle ABD = \angle C
+\end{cases}
+$$
+$$\therefore \triangle AEG \sim \triangle BFC$$
+$$\therefore \frac{CF}{EG} = \frac{BF}{AE} = \frac{\sqrt{2}}{1}$$
+$$\because EG = 1$$
+$$\therefore CF = \sqrt{2}$$
+
+答案如下：
+$$\boxed{CF = \sqrt{2}}$$
+
+
+    II. U1 复习 - T10
+
+‌题目描述‌ Description
+如图， $ 在 \triangle ABC 中 $， $ \angle ABC = 60^{\circ} $， $ AD，CE分别平分 \angle BAC 和 \angle ACB。 下列说法正确的有 $
+
+$\angle AFC = 120^{\circ}$
+$S_{\triangle ABD} = S_{\triangle ADC}$
+$若 AB = 2AE， 则 CE \perp AB$
+$CD + AE = AC$
+$S_{\triangle AEF} : S_{\triangle FDC} = AF : FC$
+
+
+    
+
+‌题目分析‌ Analysis
+
+$\frac{1}{2} \angle ABC + 90^{\circ}$ ，过。
+瞪眼法，这并不是等边三角形。
+三线合一，过。
+$作 DH \perp CE， DH 交 AC 于 H$， 两个等腰，过。
+其实可以排除了。硬要做就是往两边作高.
+
+‌解题步骤‌ Solution
+略
+答案如下：
+$$\boxed{1,2,4,5}$$
+]]></content>
+      <tags>
+        <tag>mistake</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web 开发系列教程  §0.3 学习方法：多查多用，别死记硬背</title>
+    <url>/blog/2026/11/05/webdev-i-0.3/</url>
+    <content><![CDATA[
+  Web 开发系列教程：从入门到入土
+  第一部：页面结构与样式基础
+  
+  第三节：学习方法：
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多查多用，别死记硬背
+
+上一节把工具装好、第一个页面也打开了。但仅仅这样之后你可能已经碰到两个小麻烦：改完代码要手动刷新才看得到变化；写错了不知道去哪儿查。这一节就解决这两件事，外加一个更重要的技能——遇到不会的东西，知道去哪儿找答案。
+要用的东西就三个：Live Server、MDN、Console。每一个都会说清楚“在哪儿点、看到什么、什么意思”。例子会用几个最简单的标签，用到时会顺带解释它是干什么的，不用提前背——这些标签和属性，后续章节都会逐一学习。
+本节目标：
+
+装好 Live Server，跑通“保存 → 自动刷新”的循环
+学会在 MDN 上查一个标签或属性的用法，不再靠猜
+认识 Console，知道页面出错时先去哪儿看红字
+建立“改 → 看 → 查 → 再改”的最小开发循环
+
+Live Server：装一次，以后不用手动刷新
+Live Server 是 VS Code 的一个插件。插件就是给编辑器加功能的小程序。它的作用一句话：你保存文件，浏览器自动刷新，不用再按 F5。
+怎么装
+打开 VS Code，看最左边那一竖条图标。其中一个长得像四个方块、有一块正在飞出去，点它，就打开了“扩展”面板。也可以按 Ctrl + Shift + X（Mac 是 Cmd + Shift + X）直接打开。
+在搜索框里输入 Live Server。出来的第一个结果，看作者名，认准 Ritwick Dey。点旁边的绿色 Install 按钮，等几秒，按钮变成 Uninstall 就装好了。装完建议重启一下 VS Code，图个踏实。
+怎么用
+打开上一节建好的 index.html。鼠标先点进代码编辑区——这一步很关键，得让编辑器知道你在操作这个文件。然后右键，菜单里会多出一项 Open with Live Server，点它。
+VS Code 会自动打开浏览器，地址栏里是类似 http://127.0.0.1:5500/index.html 的东西。注意开头是 http:// 而不是 file://，说明它走的是本地小服务器，不是直接打开文件。127.0.0.1 就是“本机”的意思，这个页面由你电脑上的 Live Server 提供，不是从网上下的。
+现在试一下：回到 VS Code，把 &lt;h1&gt;你好，Web！&lt;/h1&gt; 里的字改掉。这里解释一下：&lt;h1&gt; 是 HTML 里的“一级标题”标签，夹在它中间的文字会变成页面最大的标题。改完按 Ctrl + S 保存，看浏览器——不用碰它，页面自己变了。这就是 Live Server 的全部价值：改、存、看，循环变短了。
+怎么关
+VS Code 右下角状态栏会显示 Port: 5500，点它，选 Stop Live Server 就停了。不关也不会有大问题，但用完停掉是个好习惯，端口不会被一直占着。
+MDN：遇到不认识的标签，来这里查
+MDN 的全称是 Mozilla Developer Network（Mozilla 开发者网络）。Mozilla 是做火狐（Firefox）浏览器的那家组织，他们维护了一个巨大的 Web 技术文档网站。HTML、CSS、JavaScript 的每一个标签、每一条属性、每一个方法，都能在里面查到用法和示例。你可以把它当成 Web 开发的“新华字典”：不用背，但要会翻。
+怎么打开
+浏览器地址栏输入：
+https://developer.mozilla.org/zh-CN/
+或者直接点这：MDN Web Docs
+zh-CN 表示中文简体。右上角可以切换语言，初学先用中文版就够。
+怎么查一个标签
+假设你想在页面上放一张图片，但不知道用什么标签。在 MDN 首页搜索框输入 img，回车，点进 &lt;img&gt;：图像嵌入元素 这个条目。
+进去之后不用被满屏内容吓到，先看三块：
+
+开头第一段：用一两句话告诉你这个标签是干什么的。&lt;img&gt; 的开头大概会说：它把一张图片嵌入到网页里。
+示例：往下滚，有能直接看的代码例子。挑一个最简单的，复制到自己页面里改一改，看会发生什么。
+属性：属性就是可以往标签里加的“额外设置”。&lt;img&gt; 有两个最常用的属性：
+
+src：告诉浏览器图片文件在哪儿，比如 src=&quot;cat.jpg&quot;。
+alt：一段替身文字，图片加载不出来时显示它，屏幕阅读器也会读它。
+
+
+
+所以一张图片的标准写法是：
+&lt;img src=&quot;cat.jpg&quot; alt=&quot;一只橘猫趴在窗台上&quot;&gt;
+ 是标签名，src 和 alt 是写在标签里面的属性，等号后面的引号里是属性的值。现在不用记住，只要看出“标签 + 属性”这个结构就行。
+查的时候记住一件事：你是带着问题来的。问题解决了，就关掉页面去改代码，不用把 MDN 条目从头读到尾。字典不是用来通读的，MDN 也一样。
+Console：页面出问题时，先来这里看红字
+Console（控制台）是浏览器开发者工具里的一个面板。网页运行出错时，错误信息会出现在这里，绝大多数时候是红色的。你不需要学会“修”所有错误，但需要知道去哪儿看。
+怎么打开
+在浏览器页面上按 F12。Chrome 或 Edge 会从右侧或底部弹出开发者工具。顶部有一排标签，找到 Console（控制台），点它。按 F12 没反应的话，在页面上右键 → 检查，效果一样。
+Console 长什么样
+打开后是一大片区域。页面没错误时，它可能是空白的，或只有一两条灰色普通提示。有错误时，会出现一行或几行红色文字，前面可能带个红色圆点图标。
+错误信息通常长这样：
+Uncaught ReferenceError: myFunction is not defined
+at index.html:15
+先别管 Uncaught 和 ReferenceError 这些英文词。看冒号后面那句白话：myFunction is not defined，意思是“myFunction 这个东西没定义，浏览器找不到它”。下面一行 at index.html:15，意思是错误发生在 index.html 的第 15 行。点一下 index.html:15 这个链接，工具会跳到 Sources 面板，把那行代码高亮出来。
+现在不需要学会修。只要建立一个反射：页面不对劲 → 按 F12 → 看 Console 有没有红字 → 有红字就先读那句“什么东西 not defined / not a function / failed to load”。读不懂就把红字整段复制去搜，通常第一条结果就有人解释过同样的错误。
+安全提醒：不要往 Console 里粘贴陌生人给你的代码。Console 能在当前页面上执行命令，恶意代码可能借你已登录的账号做操作。只“看”，不“粘”，就没问题。
+小练习：把三件事串一遍
+花三分钟，把三个工具各用一次。这个练习会故意写一个不存在的标签，看看会发生什么。
+
+打开 index.html，用 Live Server 跑起来（编辑器里右键 → Open with Live Server）。
+找到 &lt;h1&gt;你好，Web！&lt;/h1&gt;，把 h1 改成 h11，变成 &lt;h11&gt;你好，Web！&lt;/h11&gt;。&lt;h1&gt; 是一级标题标签，&lt;h11&gt; 并不存在——HTML 只有 h1 到 h6 六级标题。保存后看浏览器：文字还在，但变小了，因为浏览器不认识 &lt;h11&gt;，把它当成普通文字处理了。
+按 F12 打开 Console。有红字吗？大概率没有。因为写了一个不存在的 HTML 标签，浏览器不会报“错”，只会默默忽略。这本身是个重要认知：不是所有问题都会在 Console 里报红。
+去 MDN 搜 h1，确认正确写法就是 &lt;h1&gt;，标题标签只有 h1 到 h6。
+改回 &lt;h1&gt;，保存，浏览器自动恢复。
+
+做完这一遍，三个工具就都用上了：Live Server 让你看到变化，MDN 帮你确认正确写法，Console 帮你判断“这里到底有没有报错”。
+下一节聊 AI。到时候你会发现，会查 MDN、会看 Console，是你判断 AI 答案靠不靠谱的底牌。
+]]></content>
+      <tags>
+        <tag>web</tag>
+        <tag>tutorial</tag>
+        <tag>html</tag>
+        <tag>css</tag>
+        <tag>contents</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Web 开发系列教程  §0.1 为什么学 HTML/CSS</title>
     <url>/blog/2026/10/31/webdev-i-0.1/</url>
     <content><![CDATA[
@@ -633,158 +719,6 @@ Live Server 就是来解决这个的。它会在你电脑上开一个小服务�
       </tags>
   </entry>
   <entry>
-    <title>Web 开发系列教程  第零章：开始之前</title>
-    <url>/blog/2026/10/31/webdev-i-0/</url>
-    <content><![CDATA[
-  Web 开发系列教程：从入门到入土
-  第一部：页面结构与样式基础
-  
-  第零章：开始之前
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——环境、方法与 AI 协作
-
-正式动手写第一个网页之前，咱先把“开电脑—敲代码—看效果”这条线铺顺。这一章不急着教你写多少标签，而是先把三件事聊明白：这东西到底值不值得学、工具怎么装、遇到问题该找谁——找文档，还是找 AI。
-你可能会想：“不就做个网页吗，直接开干不行？”行，但容易卡在很奇怪的地方：编辑器装错了版本、文件存错位置、浏览器打开是一片空白，然后开始怀疑人生。所以这一章更像出发前收拾背包——花半小时把地图、水壶和创可贴备好，后面走路才不慌。
-另外，AI 现在确实能帮你写代码，但“会用 AI”和“被 AI 牵着走”是两回事。这一章也会聊聊怎么让 AI 当你的助教，而不是替你写作业的枪手。
-
-
-0.1 为什么学 HTML&#x2F;CSS：意义、边界与路线图
-
-前端三件套：结构、样式、行为，各管一摊
-静态开发能做什么：个人主页、落地页、文档站、后台骨架
-五部曲概览，以及第一部的能力边界
-
-
-
-0.2 工具与环境准备
-
-浏览器和开发者工具：先混个脸熟
-VS Code、项目目录与 Live Server
-第一个 index.html：跑通“修改 → 刷新 → 检查”最小闭环
-
-
-
-0.3 学习方法：多查多用，别死记硬背
-
-文档优先：MDN 和官方文档
-学习闭环：看示例 → 改代码 → 做练习 → 查文档 → 复盘
-用错误驱动学习，顺手记笔记
-
-
-
-0.4 高效利用 AI 做静态开发
-
-AI 适合做什么：生成骨架、解释代码、定位样式问题、出练习题
-AI 不能替你做什么：不理解就复制、跳过基础、一口气生成整个项目
-怎么提问、怎么验证输出、怎么防止依赖
-
-
-
-
-本章目标：
-
-明白 HTML、CSS、JavaScript 各自的作用，知道本部学习访问
-安装开发工具，能独立打开自己写的 index.html
-学会前往 MDN 或官方文档查找资料
-学会用 AI 生成骨架、解释报错、出练习题，并能判断它的输出靠不靠谱
-指定一个舒服的学习节奏：不背标签，边做边查
-
-
-]]></content>
-      <tags>
-        <tag>web</tag>
-        <tag>tutorial</tag>
-        <tag>html</tag>
-        <tag>css</tag>
-        <tag>contents</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Web 开发系列教程  §0.3 学习方法：多查多用，别死记硬背</title>
-    <url>/blog/2026/11/05/webdev-i-0.3/</url>
-    <content><![CDATA[
-  Web 开发系列教程：从入门到入土
-  第一部：页面结构与样式基础
-  
-  第三节：学习方法：
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多查多用，别死记硬背
-
-上一节把工具装好、第一个页面也打开了。但仅仅这样之后你可能已经碰到两个小麻烦：改完代码要手动刷新才看得到变化；写错了不知道去哪儿查。这一节就解决这两件事，外加一个更重要的技能——遇到不会的东西，知道去哪儿找答案。
-要用的东西就三个：Live Server、MDN、Console。每一个都会说清楚“在哪儿点、看到什么、什么意思”。例子会用几个最简单的标签，用到时会顺带解释它是干什么的，不用提前背——这些标签和属性，后续章节都会逐一学习。
-本节目标：
-
-装好 Live Server，跑通“保存 → 自动刷新”的循环
-学会在 MDN 上查一个标签或属性的用法，不再靠猜
-认识 Console，知道页面出错时先去哪儿看红字
-建立“改 → 看 → 查 → 再改”的最小开发循环
-
-Live Server：装一次，以后不用手动刷新
-Live Server 是 VS Code 的一个插件。插件就是给编辑器加功能的小程序。它的作用一句话：你保存文件，浏览器自动刷新，不用再按 F5。
-怎么装
-打开 VS Code，看最左边那一竖条图标。其中一个长得像四个方块、有一块正在飞出去，点它，就打开了“扩展”面板。也可以按 Ctrl + Shift + X（Mac 是 Cmd + Shift + X）直接打开。
-在搜索框里输入 Live Server。出来的第一个结果，看作者名，认准 Ritwick Dey。点旁边的绿色 Install 按钮，等几秒，按钮变成 Uninstall 就装好了。装完建议重启一下 VS Code，图个踏实。
-怎么用
-打开上一节建好的 index.html。鼠标先点进代码编辑区——这一步很关键，得让编辑器知道你在操作这个文件。然后右键，菜单里会多出一项 Open with Live Server，点它。
-VS Code 会自动打开浏览器，地址栏里是类似 http://127.0.0.1:5500/index.html 的东西。注意开头是 http:// 而不是 file://，说明它走的是本地小服务器，不是直接打开文件。127.0.0.1 就是“本机”的意思，这个页面由你电脑上的 Live Server 提供，不是从网上下的。
-现在试一下：回到 VS Code，把 &lt;h1&gt;你好，Web！&lt;/h1&gt; 里的字改掉。这里解释一下：&lt;h1&gt; 是 HTML 里的“一级标题”标签，夹在它中间的文字会变成页面最大的标题。改完按 Ctrl + S 保存，看浏览器——不用碰它，页面自己变了。这就是 Live Server 的全部价值：改、存、看，循环变短了。
-怎么关
-VS Code 右下角状态栏会显示 Port: 5500，点它，选 Stop Live Server 就停了。不关也不会有大问题，但用完停掉是个好习惯，端口不会被一直占着。
-MDN：遇到不认识的标签，来这里查
-MDN 的全称是 Mozilla Developer Network（Mozilla 开发者网络）。Mozilla 是做火狐（Firefox）浏览器的那家组织，他们维护了一个巨大的 Web 技术文档网站。HTML、CSS、JavaScript 的每一个标签、每一条属性、每一个方法，都能在里面查到用法和示例。你可以把它当成 Web 开发的“新华字典”：不用背，但要会翻。
-怎么打开
-浏览器地址栏输入：
-https://developer.mozilla.org/zh-CN/
-或者直接点这：MDN Web Docs
-zh-CN 表示中文简体。右上角可以切换语言，初学先用中文版就够。
-怎么查一个标签
-假设你想在页面上放一张图片，但不知道用什么标签。在 MDN 首页搜索框输入 img，回车，点进 &lt;img&gt;：图像嵌入元素 这个条目。
-进去之后不用被满屏内容吓到，先看三块：
-
-开头第一段：用一两句话告诉你这个标签是干什么的。&lt;img&gt; 的开头大概会说：它把一张图片嵌入到网页里。
-示例：往下滚，有能直接看的代码例子。挑一个最简单的，复制到自己页面里改一改，看会发生什么。
-属性：属性就是可以往标签里加的“额外设置”。&lt;img&gt; 有两个最常用的属性：
-
-src：告诉浏览器图片文件在哪儿，比如 src=&quot;cat.jpg&quot;。
-alt：一段替身文字，图片加载不出来时显示它，屏幕阅读器也会读它。
-
-
-
-所以一张图片的标准写法是：
-&lt;img src=&quot;cat.jpg&quot; alt=&quot;一只橘猫趴在窗台上&quot;&gt;
- 是标签名，src 和 alt 是写在标签里面的属性，等号后面的引号里是属性的值。现在不用记住，只要看出“标签 + 属性”这个结构就行。
-查的时候记住一件事：你是带着问题来的。问题解决了，就关掉页面去改代码，不用把 MDN 条目从头读到尾。字典不是用来通读的，MDN 也一样。
-Console：页面出问题时，先来这里看红字
-Console（控制台）是浏览器开发者工具里的一个面板。网页运行出错时，错误信息会出现在这里，绝大多数时候是红色的。你不需要学会“修”所有错误，但需要知道去哪儿看。
-怎么打开
-在浏览器页面上按 F12。Chrome 或 Edge 会从右侧或底部弹出开发者工具。顶部有一排标签，找到 Console（控制台），点它。按 F12 没反应的话，在页面上右键 → 检查，效果一样。
-Console 长什么样
-打开后是一大片区域。页面没错误时，它可能是空白的，或只有一两条灰色普通提示。有错误时，会出现一行或几行红色文字，前面可能带个红色圆点图标。
-错误信息通常长这样：
-Uncaught ReferenceError: myFunction is not defined
-at index.html:15
-先别管 Uncaught 和 ReferenceError 这些英文词。看冒号后面那句白话：myFunction is not defined，意思是“myFunction 这个东西没定义，浏览器找不到它”。下面一行 at index.html:15，意思是错误发生在 index.html 的第 15 行。点一下 index.html:15 这个链接，工具会跳到 Sources 面板，把那行代码高亮出来。
-现在不需要学会修。只要建立一个反射：页面不对劲 → 按 F12 → 看 Console 有没有红字 → 有红字就先读那句“什么东西 not defined / not a function / failed to load”。读不懂就把红字整段复制去搜，通常第一条结果就有人解释过同样的错误。
-安全提醒：不要往 Console 里粘贴陌生人给你的代码。Console 能在当前页面上执行命令，恶意代码可能借你已登录的账号做操作。只“看”，不“粘”，就没问题。
-小练习：把三件事串一遍
-花三分钟，把三个工具各用一次。这个练习会故意写一个不存在的标签，看看会发生什么。
-
-打开 index.html，用 Live Server 跑起来（编辑器里右键 → Open with Live Server）。
-找到 &lt;h1&gt;你好，Web！&lt;/h1&gt;，把 h1 改成 h11，变成 &lt;h11&gt;你好，Web！&lt;/h11&gt;。&lt;h1&gt; 是一级标题标签，&lt;h11&gt; 并不存在——HTML 只有 h1 到 h6 六级标题。保存后看浏览器：文字还在，但变小了，因为浏览器不认识 &lt;h11&gt;，把它当成普通文字处理了。
-按 F12 打开 Console。有红字吗？大概率没有。因为写了一个不存在的 HTML 标签，浏览器不会报“错”，只会默默忽略。这本身是个重要认知：不是所有问题都会在 Console 里报红。
-去 MDN 搜 h1，确认正确写法就是 &lt;h1&gt;，标题标签只有 h1 到 h6。
-改回 &lt;h1&gt;，保存，浏览器自动恢复。
-
-做完这一遍，三个工具就都用上了：Live Server 让你看到变化，MDN 帮你确认正确写法，Console 帮你判断“这里到底有没有报错”。
-下一节聊 AI。到时候你会发现，会查 MDN、会看 Console，是你判断 AI 答案靠不靠谱的底牌。
-]]></content>
-      <tags>
-        <tag>web</tag>
-        <tag>tutorial</tag>
-        <tag>html</tag>
-        <tag>css</tag>
-        <tag>contents</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Web 开发系列教程（一）目录：页面结构与样式基础</title>
     <url>/blog/2026/10/26/webdev-i-contents/</url>
     <content><![CDATA[
@@ -826,7 +760,7 @@ at index.html:15
 0.2 工具与环境准备
 
 
-0.3 学习方法：多查多用，别死记硬背
+0.2 0.3 学习方法：多查多用，别死记硬背
 
 
 0.4 高效利用 AI 做静态开发
@@ -844,6 +778,72 @@ at index.html:15
 
 国际电信联盟（ITU）：Critical Digital Risks 报告. https://www.itu.int/zh/mediacentre/Pages/PR-2026-05-05-Critical-Digital-Risks-report.aspx#1 ↩︎
 
+
+
+]]></content>
+      <tags>
+        <tag>web</tag>
+        <tag>tutorial</tag>
+        <tag>html</tag>
+        <tag>css</tag>
+        <tag>contents</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web 开发系列教程  第零章：开始之前</title>
+    <url>/blog/2026/10/31/webdev-i-0/</url>
+    <content><![CDATA[
+  Web 开发系列教程：从入门到入土
+  第一部：页面结构与样式基础
+  
+  第零章：开始之前
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——环境、方法与 AI 协作
+
+正式动手写第一个网页之前，咱先把“开电脑—敲代码—看效果”这条线铺顺。这一章不急着教你写多少标签，而是先把三件事聊明白：这东西到底值不值得学、工具怎么装、遇到问题该找谁——找文档，还是找 AI。
+你可能会想：“不就做个网页吗，直接开干不行？”行，但容易卡在很奇怪的地方：编辑器装错了版本、文件存错位置、浏览器打开是一片空白，然后开始怀疑人生。所以这一章更像出发前收拾背包——花半小时把地图、水壶和创可贴备好，后面走路才不慌。
+另外，AI 现在确实能帮你写代码，但“会用 AI”和“被 AI 牵着走”是两回事。这一章也会聊聊怎么让 AI 当你的助教，而不是替你写作业的枪手。
+
+
+0.1 为什么学 HTML&#x2F;CSS：意义、边界与路线图
+
+前端三件套：结构、样式、行为，各管一摊
+静态开发能做什么：个人主页、落地页、文档站、后台骨架
+五部曲概览，以及第一部的能力边界
+
+
+
+0.2 工具与环境准备
+
+浏览器和开发者工具：先混个脸熟
+VS Code、项目目录与 Live Server
+第一个 index.html：跑通“修改 → 刷新 → 检查”最小闭环
+
+
+
+0.2 0.3 学习方法：多查多用，别死记硬背
+
+文档优先：MDN 和官方文档
+学习闭环：看示例 → 改代码 → 做练习 → 查文档 → 复盘
+用错误驱动学习，顺手记笔记
+
+
+
+0.4 高效利用 AI 做静态开发
+
+AI 适合做什么：生成骨架、解释代码、定位样式问题、出练习题
+AI 不能替你做什么：不理解就复制、跳过基础、一口气生成整个项目
+怎么提问、怎么验证输出、怎么防止依赖
+
+
+
+
+本章目标：
+
+明白 HTML、CSS、JavaScript 各自的作用，知道本部学习访问
+安装开发工具，能独立打开自己写的 index.html
+学会前往 MDN 或官方文档查找资料
+学会用 AI 生成骨架、解释报错、出练习题，并能判断它的输出靠不靠谱
+指定一个舒服的学习节奏：不背标签，边做边查
 
 
 ]]></content>
