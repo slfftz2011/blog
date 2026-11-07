@@ -1,7 +1,7 @@
 ---
 title: 数学整理-第 1 周
 date: 2025-12-26 21:15
-tag: mistake
+tags: mistake
 cover: /img/tag-mistake.jpg
 mathjax: true
 ---
