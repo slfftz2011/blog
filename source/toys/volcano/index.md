@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>火山喷发 · Canvas 2D 粒子动画</title>
 <style>
   html, body { margin: 0; height: 100%; background: #000; }
@@ -22,8 +17,6 @@
     box-shadow: 0 30px 80px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.06);
   }
 </style>
-</head>
-<body>
 <canvas id="volcano" width="960" height="540"></canvas>
 <script src="./1.js"></script>
 <script src="./2.js"></script>
@@ -33,5 +26,3 @@
 <script src="./6.js"></script>
 <script src="./7.js"></script>
 <script src="./8.js"></script>
-</body>
-</html>

@@ -215,7 +215,9 @@ aside:
       link: https://github.com/slfftz2011
   card_announcement:
     enable: true
-    content: 欢迎来到我的博客！正在装修ing...\n《Web开发系列：从入门到入土》正在连载中，欢迎捧场！
+  content: |-
+    欢迎来到我的博客！正在装修ing...
+    《Web开发系列：从入门到入土》正在连载中，欢迎捧场！
   card_recent_post:
     enable: true
     limit: 5
