@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "hexo": "^8.0.0",
-    "hexo-butterfly-extjs": "^1.5.8",
+    "hexo-butterfly-extjs": "^1.5.9",
     "hexo-deployer-git": "^4.0.0",
     "hexo-fs": "^5.0.1",
     "hexo-generator-archive": "^2.0.0",
