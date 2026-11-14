@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" />
+    </pattern>
+
+    <linearGradient id="windowStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#a5d8ff" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <circle cx="1050" cy="120" r="220" fill="#2B88D8" opacity="0.06" />
+  <circle cx="150" cy="560" r="180" fill="#f59e0b" opacity="0.04" />
+
+  <!-- 浏览器窗口轮廓 -->
+  <g transform="translate(620, 90)">
+    <rect x="0" y="0" width="520" height="450" rx="18" fill="#0d1117" fill-opacity="0.6" stroke="url(#windowStroke)" stroke-width="1.5" />
+    <rect x="0" y="0" width="520" height="44" rx="18" fill="#ffffff" fill-opacity="0.04" />
+    <rect x="0" y="22" width="520" height="22" fill="#ffffff" fill-opacity="0.04" />
+    <line x1="0" y1="44" x2="520" y2="44" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+    <circle cx="22" cy="22" r="5" fill="#ff5f57" />
+    <circle cx="40" cy="22" r="5" fill="#febc2e" />
+    <circle cx="58" cy="22" r="5" fill="#28c840" />
+    <rect x="80" y="13" width="120" height="18" rx="9" fill="#ffffff" fill-opacity="0.06" />
+  </g>
+
+  <!-- 窗口内的抽象布局线 -->
+  <g transform="translate(660, 150)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5" fill="none">
+    <rect x="0" y="0" width="440" height="60" rx="8" />
+    <rect x="0" y="80" width="200" height="150" rx="8" />
+    <rect x="220" y="80" width="220" height="60" rx="8" />
+    <rect x="220" y="160" width="220" height="70" rx="8" />
+    <rect x="0" y="250" width="440" height="50" rx="8" />
+  </g>
+
+  <!-- HTML 尖括号符号 -->
+  <g transform="translate(720, 135)" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20,25 0,45 20,65" />
+    <line x1="35" y1="65" x2="45" y2="25" />
+    <polyline points="60,25 80,45 60,65" />
+  </g>
+
+  <!-- CSS 色块 / 样式线 -->
+  <g transform="translate(675, 470)">
+    <rect x="0" y="0" width="80" height="12" rx="6" fill="#2B88D8" />
+    <rect x="90" y="0" width="55" height="12" rx="6" fill="#06b6d4" />
+    <rect x="155" y="0" width="35" height="12" rx="6" fill="#f59e0b" />
+    <rect x="200" y="0" width="65" height="12" rx="6" fill="#ffffff" opacity="0.25" />
+    <rect x="0" y="26" width="45" height="8" rx="4" fill="#ffffff" opacity="0.12" />
+    <rect x="0" y="44" width="65" height="8" rx="4" fill="#ffffff" opacity="0.12" />
+  </g>
+
+  <!-- 左侧文字区 -->
+  <g transform="translate(80, 150)">
+    <text x="0" y="0" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="500" fill="#a5d8ff" letter-spacing="2">
+      WEB 开发系列教程：从入门到入土
+    </text>
+    <text x="0" y="55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff" opacity="0.15">
+      I
+    </text>
+    <text x="0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="800" fill="url(#titleGrad)" letter-spacing="1">
+      页面结构与
+    </text>
+    <text x="0" y="175" font-family="'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="800" fill="url(#titleGrad)" letter-spacing="1">
+      样式基础
+    </text>
+    <text x="0" y="225" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.45" letter-spacing="0.5">
+      HTML 结构 · CSS 样式 · 从浏览器开始
+    </text>
+    <!-- 章节名预留位置 -->
+    <g transform="translate(0, 280)">
+      <rect x="0" y="-18" width="300" height="36" rx="8" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="6 4" />
+      <text x="14" y="5" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.2" letter-spacing="0.5">目录</text>
+    </g>
+  </g>
+
+  <!-- 底部信息条 -->
+  <g transform="translate(80, 570)">
+    <line x1="0" y1="0" x2="1040" y2="0" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+    <text x="0" y="30" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#ffffff" opacity="0.35" letter-spacing="1">
+      CONTENTS · 目录
+    </text>
+    <text x="1040" y="30" text-anchor="end" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#ffffff" opacity="0.25">
+      slfftz2011.github.io/blog
+    </text>
+  </g>
+</svg>
