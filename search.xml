@@ -245,112 +245,53 @@ Wake up.该醒了。
       </tags>
   </entry>
   <entry>
-    <title>数学整理-第 2 周</title>
-    <url>/blog/2025/12/31/mistake-week2/</url>
-    <content><![CDATA[第 2 周的数学错题整理…
+    <title>数学整理-第 1 周</title>
+    <url>/blog/2025/12/26/mistake-week1/</url>
+    <content><![CDATA[第 1 周的数学错题整理…
 
-    I. 专项突破一 - T4
-    截长补短的辅助线作法
+    I. 被压一头的一次函数
+    根据不等式求一次函数参数取值范围
 
 ‌题目描述‌ Description
-如图， $ 在 \triangle ABC 中 $， $ AB=AC $， $ AD 是 BC 边上的高线 $， $ EF 垂直平分 AB $， $ 分别交 AB，AC，AD 于点 E,F,G $。 $ 若 \angle BAC=45^{\circ}， EG=1 $， $ 则 CF 长为 \underline{\ \ \ \ \ \ }$。
+如图， $ y1=-x+2 $， $ y2=kx-1 (k \neq 0, k为常数) $， 为使 $ \forall x&lt;1, y1 &gt; y2 恒成立$, 求 $ k $ 的取值范围。
 
     
 
 ‌题目分析‌ Analysis
-第一种思路：
-$$ 题目要求 CF 的长。而已知 EG 的长。$$
-$$ \Downarrow $$
-$$ 可以转移 CF 到 EG 或其所在线段上。 $$
-$$ \Downarrow $$
-$$ 可以尝试使用相似三角形求。 $$
-$$ \Downarrow $$
-$$ 构造包含这两条边的相似三角形 $$
+思路如下：
+$$求交点坐标（有交点时）$$
+$$\Downarrow$$
+$$联立两个解析式，得 -x+2=kx-1$$
+$$\Downarrow$$
+$$解得 (\frac{3}{k+1}, \frac{2k-1}{k+1})$$
+画图…
 
-第二种思路：
-$$ 有等腰和高线。$$
-$$ \Downarrow $$
-$$ 三线合一得到角平分线。 $$
-$$ \Downarrow $$
-$$ 角平分线基本性质：其上点到角两边距离相等。 $$
-$$ \Downarrow $$
-$$ 转移 EG 到 \triangle AGF 内。$$
-‌解题步骤‌ Solution
-$ 法1_{ \ \ Function 1}$
+    
+    
+
+两图为满足要求的临界。图1的斜率再高就会与 $ y1 $ 交于 $x &lt; 1$ 的位置，不满足条件；图2同理。
+因此 $ y2 $ 应绘制于实线圆弧内。
 
     
 
-$$作 GH \perp AF$$
-$$\because 在 \triangle ABC 中，AB=AC，AD 为 BC 边上的高线$$
-$$\therefore \angle BAD = \angle CAD$$
-$$\because EF 垂直平分 AB$$
-$$\therefore EF \perp AB， 即 \angle AEF = 90^{\circ}$$
-$$\because GH \perp AF，EG = 1$$
-$$\therefore GF = EG = 1$$
-$$\because \angle BAC = 45^{\circ}$$
-$$\therefore \angle AFE = 180^{\circ} - \angle BAC - \angle AEF = 45^{\circ}$$
-$$\therefore \triangle FGH 为等腰直角三角形$$
-$$\therefore FG = \sqrt{2}$$
-$$\therefore EF = \sqrt{2} + 1$$
-$$\therefore AC = AB = 2 \sqrt{2} + 2，AE = \sqrt{2} + 2$$
-$$\therefore CF = \sqrt{2} （勾股，这里不过多赘述）$$
+$$求图1临界， 观察到交点横坐标为1$$
+$$\Downarrow$$
+$$得：\frac{3}{k+1}=1$$
+$$\Downarrow$$
+$$解得：k=2$$
 
-$ 法2_{ \ \ Function 2}$
+$$求图2临界， 观察到无交点$$
+$$\Downarrow$$
+$$得：k+1=0$$
+$$\Downarrow$$
+$$解得：k=-1$$
 
-    
-
-$$连结 BF$$
-$$\because EF 垂直平分 AB$$
-$$\therefore \angle AEF = 90^{\circ}，EF 平分 \angle AFB$$
-$$\because \angle BAC = 45^{\circ}$$
-$$\therefore \angle BFC = 2 \angle AFE = 90^{\circ}$$
-$$\because AB = AC$$
-$$\therefore \angle ABD = \angle C$$
-$$\because AD 为高线$$
-$$\therefore \angle BAD + \angle ABD = \angle FBC + \angle C = 90^{\circ}$$
-$$\therefore \angle BAD = \angle FBC$$
-$$在 \triangle AEG 和 \triangle BFC 中$$
-$$
-\begin{cases}
-\angle BAD = \angle FBC\\
-\angle ABD = \angle C
-\end{cases}
-$$
-$$\therefore \triangle AEG \sim \triangle BFC$$
-$$\therefore \frac{CF}{EG} = \frac{BF}{AE} = \frac{\sqrt{2}}{1}$$
-$$\because EG = 1$$
-$$\therefore CF = \sqrt{2}$$
-
+$$注意到题目要求k\neq0， 记得写上$$
+‌解体步骤‌ Solution
+见分析。
 答案如下：
-$$\boxed{CF = \sqrt{2}}$$
+$$\boxed{-1\leq k \leq 2 且 k \neq 0}$$
 
-
-    II. U1 复习 - T10
-
-‌题目描述‌ Description
-如图， $ 在 \triangle ABC 中 $， $ \angle ABC = 60^{\circ} $， $ AD，CE分别平分 \angle BAC 和 \angle ACB。 下列说法正确的有 $
-
-$\angle AFC = 120^{\circ}$
-$S_{\triangle ABD} = S_{\triangle ADC}$
-$若 AB = 2AE， 则 CE \perp AB$
-$CD + AE = AC$
-$S_{\triangle AEF} : S_{\triangle FDC} = AF : FC$
-
-
-    
-
-‌题目分析‌ Analysis
-
-$\frac{1}{2} \angle ABC + 90^{\circ}$ ，过。
-瞪眼法，这并不是等边三角形。
-三线合一，过。
-$作 DH \perp CE， DH 交 AC 于 H$， 两个等腰，过。
-其实可以排除了。硬要做就是往两边作高.
-
-‌解题步骤‌ Solution
-略
-答案如下：
-$$\boxed{1,2,4,5}$$
 ]]></content>
       <tags>
         <tag>mistake</tag>
@@ -476,59 +417,6 @@ Vue、模板渲染（Pug）与后端衔接
         <tag>html</tag>
         <tag>css</tag>
         <tag>contents</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数学整理-第 1 周</title>
-    <url>/blog/2025/12/26/mistake-week1/</url>
-    <content><![CDATA[第 1 周的数学错题整理…
-
-    I. 被压一头的一次函数
-    根据不等式求一次函数参数取值范围
-
-‌题目描述‌ Description
-如图， $ y1=-x+2 $， $ y2=kx-1 (k \neq 0, k为常数) $， 为使 $ \forall x&lt;1, y1 &gt; y2 恒成立$, 求 $ k $ 的取值范围。
-
-    
-
-‌题目分析‌ Analysis
-思路如下：
-$$求交点坐标（有交点时）$$
-$$\Downarrow$$
-$$联立两个解析式，得 -x+2=kx-1$$
-$$\Downarrow$$
-$$解得 (\frac{3}{k+1}, \frac{2k-1}{k+1})$$
-画图…
-
-    
-    
-
-两图为满足要求的临界。图1的斜率再高就会与 $ y1 $ 交于 $x &lt; 1$ 的位置，不满足条件；图2同理。
-因此 $ y2 $ 应绘制于实线圆弧内。
-
-    
-
-$$求图1临界， 观察到交点横坐标为1$$
-$$\Downarrow$$
-$$得：\frac{3}{k+1}=1$$
-$$\Downarrow$$
-$$解得：k=2$$
-
-$$求图2临界， 观察到无交点$$
-$$\Downarrow$$
-$$得：k+1=0$$
-$$\Downarrow$$
-$$解得：k=-1$$
-
-$$注意到题目要求k\neq0， 记得写上$$
-‌解体步骤‌ Solution
-见分析。
-答案如下：
-$$\boxed{-1\leq k \leq 2 且 k \neq 0}$$
-
-]]></content>
-      <tags>
-        <tag>mistake</tag>
       </tags>
   </entry>
   <entry>
@@ -852,6 +740,118 @@ AI 给的东西，别急着信。它说“好了”，你要自己看一遍才�
         <tag>html</tag>
         <tag>css</tag>
         <tag>contents</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数学整理-第 2 周</title>
+    <url>/blog/2025/12/31/mistake-week2/</url>
+    <content><![CDATA[第 2 周的数学错题整理…
+
+    I. 专项突破一 - T4
+    截长补短的辅助线作法
+
+‌题目描述‌ Description
+如图， $ 在 \triangle ABC 中 $， $ AB=AC $， $ AD 是 BC 边上的高线 $， $ EF 垂直平分 AB $， $ 分别交 AB，AC，AD 于点 E,F,G $。 $ 若 \angle BAC=45^{\circ}， EG=1 $， $ 则 CF 长为 \underline{\ \ \ \ \ \ }$。
+
+    
+
+‌题目分析‌ Analysis
+第一种思路：
+$$ 题目要求 CF 的长。而已知 EG 的长。$$
+$$ \Downarrow $$
+$$ 可以转移 CF 到 EG 或其所在线段上。 $$
+$$ \Downarrow $$
+$$ 可以尝试使用相似三角形求。 $$
+$$ \Downarrow $$
+$$ 构造包含这两条边的相似三角形 $$
+
+第二种思路：
+$$ 有等腰和高线。$$
+$$ \Downarrow $$
+$$ 三线合一得到角平分线。 $$
+$$ \Downarrow $$
+$$ 角平分线基本性质：其上点到角两边距离相等。 $$
+$$ \Downarrow $$
+$$ 转移 EG 到 \triangle AGF 内。$$
+‌解题步骤‌ Solution
+$ 法1_{ \ \ Function 1}$
+
+    
+
+$$作 GH \perp AF$$
+$$\because 在 \triangle ABC 中，AB=AC，AD 为 BC 边上的高线$$
+$$\therefore \angle BAD = \angle CAD$$
+$$\because EF 垂直平分 AB$$
+$$\therefore EF \perp AB， 即 \angle AEF = 90^{\circ}$$
+$$\because GH \perp AF，EG = 1$$
+$$\therefore GF = EG = 1$$
+$$\because \angle BAC = 45^{\circ}$$
+$$\therefore \angle AFE = 180^{\circ} - \angle BAC - \angle AEF = 45^{\circ}$$
+$$\therefore \triangle FGH 为等腰直角三角形$$
+$$\therefore FG = \sqrt{2}$$
+$$\therefore EF = \sqrt{2} + 1$$
+$$\therefore AC = AB = 2 \sqrt{2} + 2，AE = \sqrt{2} + 2$$
+$$\therefore CF = \sqrt{2} （勾股，这里不过多赘述）$$
+
+$ 法2_{ \ \ Function 2}$
+
+    
+
+$$连结 BF$$
+$$\because EF 垂直平分 AB$$
+$$\therefore \angle AEF = 90^{\circ}，EF 平分 \angle AFB$$
+$$\because \angle BAC = 45^{\circ}$$
+$$\therefore \angle BFC = 2 \angle AFE = 90^{\circ}$$
+$$\because AB = AC$$
+$$\therefore \angle ABD = \angle C$$
+$$\because AD 为高线$$
+$$\therefore \angle BAD + \angle ABD = \angle FBC + \angle C = 90^{\circ}$$
+$$\therefore \angle BAD = \angle FBC$$
+$$在 \triangle AEG 和 \triangle BFC 中$$
+$$
+\begin{cases}
+\angle BAD = \angle FBC\\
+\angle ABD = \angle C
+\end{cases}
+$$
+$$\therefore \triangle AEG \sim \triangle BFC$$
+$$\therefore \frac{CF}{EG} = \frac{BF}{AE} = \frac{\sqrt{2}}{1}$$
+$$\because EG = 1$$
+$$\therefore CF = \sqrt{2}$$
+
+答案如下：
+$$\boxed{CF = \sqrt{2}}$$
+
+
+    II. U1 复习 - T10
+
+‌题目描述‌ Description
+如图， $ 在 \triangle ABC 中 $， $ \angle ABC = 60^{\circ} $， $ AD，CE分别平分 \angle BAC 和 \angle ACB。 下列说法正确的有 $
+
+$\angle AFC = 120^{\circ}$
+$S_{\triangle ABD} = S_{\triangle ADC}$
+$若 AB = 2AE， 则 CE \perp AB$
+$CD + AE = AC$
+$S_{\triangle AEF} : S_{\triangle FDC} = AF : FC$
+
+
+    
+
+‌题目分析‌ Analysis
+
+$\frac{1}{2} \angle ABC + 90^{\circ}$ ，过。
+瞪眼法，这并不是等边三角形。
+三线合一，过。
+$作 DH \perp CE， DH 交 AC 于 H$， 两个等腰，过。
+其实可以排除了。硬要做就是往两边作高.
+
+‌解题步骤‌ Solution
+略
+答案如下：
+$$\boxed{1,2,4,5}$$
+]]></content>
+      <tags>
+        <tag>mistake</tag>
       </tags>
   </entry>
   <entry>
