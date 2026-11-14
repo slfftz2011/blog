@@ -1,3 +1,8 @@
+---
+layout: default
+title: 火山喷发
+---
+
 <title>火山喷发 · Canvas 2D 粒子动画</title>
 <style>
   html, body { margin: 0; height: 100%; background: #000; }
