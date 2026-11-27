@@ -82,7 +82,7 @@ error_img:
 
 # 简易 404 页面
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
   background: /img/error-page.png
 
@@ -122,7 +122,7 @@ index_layout: 1               # 首页布局：1/2/3/4/5/6/7
 # 1=description 2=有描述用描述否则自动摘要 3=自动摘要 false=不显示
 index_post_content:
   method: 3
-  length: 500                 # 摘要字数（method=2/3 时生效）
+  length: 50                 # 摘要字数（method=2/3 时生效）
 
 # ============================================================
 # 文章页设置
