@@ -116,6 +116,8 @@ subtitle:
   source: false               # 是否从外部数据源读取副标题
   sub:                        # 副标题内容（数组，可写多条）
 
+index_layout: 3               # 首页布局：1/2/3/4/5/6/7
+
 # 首页文章摘要
 # 1=description 2=有描述用描述否则自动摘要 3=自动摘要 false=不显示
 index_post_content:
