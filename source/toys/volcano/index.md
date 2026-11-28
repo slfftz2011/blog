@@ -5,16 +5,25 @@ title: 火山喷发
 
 <title>火山喷发 · Canvas 2D 粒子动画</title>
 <style>
-  #volcano {
-    width: min(960px, 97vw);
-    height: auto;
-    aspect-ratio: 960 / 540;
-    display: block;
+  .volcano-container {
+    width: 100%;
+    aspect-ratio: 960 / 540; /* 保持比例 */
     border-radius: 10px;
-    box-shadow: 0 30px 80px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.06);
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin: 20px 0;
+  }
+  .volcano-container canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 </style>
-<canvas id="volcano" width="960" height="540"></canvas>
+
+<div class="volcano-container">
+  <canvas id="volcano" width="960" height="540"></canvas>
+</div>
 <script src="./1.js"></script>
 <script src="./2.js"></script>
 <script src="./3.js"></script>

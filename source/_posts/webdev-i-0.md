@@ -7,6 +7,7 @@ tags:
     - html
     - css
     - contents
+cover: /img/dev/i/web-0-cover.png
 ---
 
 <div align=center>
