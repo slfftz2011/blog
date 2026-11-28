@@ -5,14 +5,6 @@ title: 火山喷发
 
 <title>火山喷发 · Canvas 2D 粒子动画</title>
 <style>
-  html, body { margin: 0; height: 100%; background: #000; }
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(ellipse at 50% 45%, #15111c 0%, #06050a 55%, #000 100%);
-    overflow: hidden;
-  }
   #volcano {
     width: min(960px, 97vw);
     height: auto;

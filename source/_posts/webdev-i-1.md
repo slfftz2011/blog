@@ -24,9 +24,9 @@ HTML 不负责好看，它只干一件事：**说清楚每块内容是什么**�
 只有在骨架搭好了，后续样式施工队才能进入装修。
 
 - **1.1 一个 HTML 文件里到底有什么**
-  - `&lt;!DOCTYPE html&gt;`、`&lt;html&gt;`、`&lt;head&gt;`、`&lt;body&gt;`：四块各管什么
-  - `&lt;meta charset="UTF-8"&gt;`：中文乱码的根源
-  - `&lt;title&gt;` 与 `&lt;meta name="viewport"&gt;`：标签页标题和手机适配的第一行
+  - `<!DOCTYPE html>`、`<html>`、`<head>`、`<body>`：四块各管什么
+  - `<meta charset="UTF-8">`：中文乱码的根源
+  - `<title>` 与 `<meta name="viewport">`：标签页标题和手机适配的第一行
 
 - **1.2 标题、段落与文本标签**
   - `<h1>`～`<h6>`：六级标题，别跳级用
