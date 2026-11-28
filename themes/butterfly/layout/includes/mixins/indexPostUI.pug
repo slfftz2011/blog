@@ -105,8 +105,12 @@ mixin indexPostUI()
                           i.fa-solid.fa-spinner.fa-spin
 
             //- Display the article introduction on homepage
-            - const content = latex2unicode(postDesc(article))
+            - let content = latex2unicode(postDesc(article))
+            //- 安全处理：将可能被解析为 HTML 的危险标签转义为纯文本
             if content
+              - content = content.replace(/<(?!\/?(?:p|a|strong|em|code|pre|br|img|div|span|ul|ol|li|h[1-6]|blockquote)\b)[^>]*>/gi, '')
+              //- 针对被截断的残缺标签（如 <meta charset=" 没有闭合）进行强制转义
+              - content = content.replace(/<(?!\/?(?:p|a|strong|em|code|pre|br|img|div|span|ul|ol|li|h[1-6]|blockquote)\b)/gi, '&lt;')
               .content!=content
 
         if theme.ad && theme.ad.index
